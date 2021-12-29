@@ -1,12 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Banner Image</title>
-
+    <title>Purchase Order Master</title>
     <!--favicon -->
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
 
@@ -334,10 +331,9 @@
             <!--app-content open-->
             <div class="app-content">
                 <section class="section">
-
                     <!--page-header open-->
                     <div class="page-header">
-                        <h4 class="page-title">Banner Image Upload</h4>
+                        <h4 class="page-title">Purchase Order Master</h4>
                     </div>
                     <!--page-header closed-->
                     <!-- from start -->
@@ -345,28 +341,101 @@
                         <div class="col-lg-12">
                             <div class="card">
                                 <div class="card-header">
-                                    <h5>Banner Image Upload</h5>
+                                    <h5>Order Details</h5>
                                 </div>
                                 <div class="card-body">
                                     <form action="">
                                         <div class="row">
                                             <!--   -->
-                                            <div class="form-group col-md-6">
-                                                <label class="col-form-label">Physical Pathd<span class="text-danger">*</span>
+                                            <div class="form-group col-md-4">
+                                                <label class="col-form-label">Order Id<span class="text-danger">*</span>
                                                 </label>
-                                                <input required type="text" class="form-control" placeholder="Physical Path">
-                                            </div>
-
-                                            <div class="form-group col-md-6">
-                                                <label class="col-form-label">Image Upload<span
-                                                        class="text-danger">*</span>
-                                                </label>
-                                                <input required type="file" class="form-control"
-                                                    >
+                                                <input required type="text" class="form-control" placeholder="Order Id">
                                             </div>
                                             <div class="form-group col-md-4">
-                                                <button type="submit" class="btn btn-success mt-1 mb-0">Submit </button>
-                                                <button  type="submit" class="btn btn-primary mt-1 ml-3 mb-0">Cancel
+                                                <label class="col-form-label">Order No<span
+                                                        class="text-danger">*</span>
+                                                </label>
+                                                <input required type="text" class="form-control"
+                                                    placeholder="Enter your Order No">
+                                            </div>
+                                            <div class="form-group col-md-4">
+                                                <label class="col-form-label">Provider<span class="text-danger">*</span>
+                                                </label>
+                                                <select required name="somename" class="form-control">
+                                                    <option selected value=""> --- select ---</option>
+                                                    <option value=""></option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group col-md-4">
+                                                <label class="col-form-label">Payment Mode<span class="text-danger">*</span>
+                                                </label>
+                                                <select required name="somename" class="form-control">
+                                                    <option selected value=""> --- select ---</option>
+                                                    <option value=""></option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group col-md-4">
+                                                <label class="col-form-label">Payment Mode<span class="text-danger">*</span>
+                                                </label>
+                                                <select required name="somename" class="form-control">
+                                                    <option selected value=""> --- select ---</option>
+                                                    <option value=""></option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group col-md-4">
+                                                <label class="col-form-label">Order Date<span class="text-danger">*</span>
+                                                </label>
+                                                <input type="date" class="form-control">
+                                            </div>
+                                            <div class="form-group col-md-4">
+                                                <label class="col-form-label">Order Amount<span class="text-danger">*</span>
+                                                </label>
+                                               <input type="number" class="form-control">
+                                            </div>
+                                            <div class="form-group col-md-4">
+                                                <label class="col-form-label">Discount (%)<span class="text-danger">*</span>
+                                                </label>
+                                                <input type="number" class="form-control">
+                                            </div>
+                                            <div class="form-group col-md-4">
+                                                <label class="col-form-label">Discount Rs (%)<span class="text-danger">*</span>
+                                                </label>
+                                                <input type="number" class="form-control">
+                                            </div>
+                                            <div class="form-group col-md-4">
+                                                <label class="col-form-label">GST(%)<span class="text-danger">*</span>
+                                                </label>
+                                                <input type="number" class="form-control">
+                                            </div>
+                                             <div class="form-group col-md-4">
+                                                <label class="col-form-label">GST Rs (%)<span class="text-danger">*</span>
+                                                </label>
+                                                <input type="number" class="form-control">
+                                            </div>
+                                             <div class="form-group col-md-4">
+                                                <label class="col-form-label">Tds (%)<span class="text-danger">*</span>
+                                                </label>
+                                                <input type="number" class="form-control">
+                                            </div>
+                                             <div class="form-group col-md-4">
+                                                <label class="col-form-label">Tds Rs (%)<span class="text-danger">*</span>
+                                                </label>
+                                                <input type="number" class="form-control">
+                                            </div>
+                                             <div class="form-group col-md-4">
+                                                <label class="col-form-label">Payment Amount<span class="text-danger">*</span>
+                                                </label>
+                                                <input type="number" class="form-control">
+                                            </div>
+                                            <div class="form-group col-md-4">
+                                                <label class="col-form-label">Delivery Amount<span class="text-danger">*</span>
+                                                </label>
+                                                <input type="number" class="form-control">
+                                            </div>
+                                            <div class="form-group col-md-4">
+                                               <button type="submit" class="btn btn-success mt-1 mb-0">Save </button>
+                                                <button disabled type="submit" class="btn btn-primary mt-1 ml-3 mb-0">Cancel
                                                 </button>
                                             </div>
                                         </div><!-- row close-->
